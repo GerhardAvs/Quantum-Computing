@@ -28,7 +28,7 @@ qxc.h(qreg[0])
 qxc.h(qreg[0])
 
 qxc.measure(qreg,creg)
-qxc.draw(output='mpl')
+# qxc.draw(output='mpl')
 
 t = AerSimulator().run(qxc,shots=10000)
 c = t.result().get_counts(qxc)

@@ -27,7 +27,7 @@ for i in range(8): # se ejecuta 0 1 2 3 4 5 6 7
 
 qxc.barrier()
 qxc.measure(qreg,creg)
-qxc.draw(output='mpl')
+# qxc.draw(output='mpl') to draw the circuit
 
 job = AerSimulator().run(qxc,shots=10)
 counts = job.result().get_counts(qxc)
